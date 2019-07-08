@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>  Form Creator Index </title>
+  <meta name="description" content="Mon projet blabla">
+  <meta name="author" content="About Project">
+  <meta name="theme-color" content="c#458485">
+
+  <!-- OPEN GRAPH OBLIGATOIRE -->
+  <meta property="og:title" content="Title de base">
+  <meta property="og:type" content="Website" />
+   <meta property="og:url" content="http://www.mon_site.com" />
+  <meta property="og:image" content="photo interne ou en externe" />
+  <!-- OG NON NECESSAIRE -->
+  <meta property="og:description" content="Blabla Descriptif pour RS" />
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="">
+
+  <!--BOOSTRAP CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="master.css" >
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- FAVicon -->
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+</head>
+
+<body>
+
+<div class="container">
+
+      <div class="row centered">
+
+        <div class="jumbotron">
+          <h1 class="text-center">Récupération des données d'un formulaire</h1>
+          <p class="lead">Retrouvez vos formulaires via la selection ci dessous</p>
+          <hr class="my-4">
+
+            <form id="get-forms" action="" method="" class="" data-name="formPicker" data-id="">
+
+                <div class="form-group">
+
+                <input list="selectForms" class="form-control" aria-describedby="selectForms">
+                <datalist id="selectForms">
+                    <option value="benji">benji</option>
+                    <option value="test1">test1</option>
+                    <option value="test">test</option>
+                    <option value="Form D">Form D</option>
+                    <option value="Form N">Form N</option>
+
+                </datalist>
+
+                 </div>
+
+            </form>
+
+          <p>Fonctionnalité en cours, données statiques !!</p>
+
+          <p class="lead">
+            <a class="btn submit-btn  btn-lg" href="#" role="button">Go !!!</a>
+          </p>
+
+        </div>
+
+      </div>
+
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <form id="the-form" action="" class="offset-lg--4 col-lg-4" method="" data-name="machin" data-id="">
+
+        <h2 class="form-title" data-name="">Nom Formulaire</h2>
+
+
+          <div class="form-group">
+                <label for="name1" class="question" contenteditable></label>
+                <input type="text" name="name1" class="response form-control" placeholder="une réponse" id="gay">
+          </div>
+
+          <div class="form-group">
+                <label for="nom" class="question" contenteditable></label>
+                <input type="text"  name="name2" class="response form-control" placeholder="une réponse">
+          </div>
+
+          <div class=" form-group">
+                <label for="nom" class="question" contenteditable></label>
+                <input type="text"  name="name3" class="response form-control" placeholder="une réponse">
+          </div>
+
+           <div class=" form-group">
+                <label for="nom" class="question" contenteditable></label>
+                <input type="text"  name="name4" class="response form-control" placeholder="une réponse">
+          </div>
+
+          <button type="submit" class="submit-btn btn" id="save-data">Save !</button>
+      </form>
+
+  </div>
+
+</div>
+
+<div class="set-box">
+  <button class="btn-submit btn" id="clearData" data-value="off"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+  <button class="btn-submit btn" id="addAction" ><i class="fa fa-plus" aria-hidden="true"></i></button>
+
+</div>
+
+</body>
+
+  <!-- BsT4 & jQuery Componants -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+
+</html>
